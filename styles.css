@@ -51,9 +51,6 @@ nav {
     justify-content: space-between;
 }
 
-.toggle {
-    display:block;
-}
 
 a {
     color: rgb(8, 8, 138);
