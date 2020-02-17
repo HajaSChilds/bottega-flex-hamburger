@@ -20,6 +20,9 @@ nav {
     flex-basis: 10%;
 }
 
+#toggle {
+    display:flex;
+}
 
 .hamburger {
     color:green;
@@ -44,6 +47,7 @@ nav {
     min-width: 200px;
 
 }
+
 
 .links {
     display:flex;
@@ -136,7 +140,7 @@ nav {
 }
 
 #toggle {
-    display:none;
+    display: none;
 }
 
 .hamburger {
