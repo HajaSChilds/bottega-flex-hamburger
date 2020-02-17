@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="toggle.js">
+    </script>
 </head>
 <body>
     <nav>
         <div class="stationary-menu">
-            <div class="hamburger">
-            <button>&#9776;</button>
+        <div class="hamburger">
+            <button class="toggle-btn" onclick="myFunction()">&#9776;</button>
             </div>
-            <div class="logo">
-                <h1>Wise Realty Group</h1>
-            </div>
+        <div class="logo">
+                <h1>ABC Realty Group</h1>
         </div>
-        <div class="links">
+        </div>
+        <div id="toggle" class="links">
             <div class="header-links">
                 <div class="hlink">
                     <a href="#">
@@ -39,7 +41,8 @@
     </nav>
 
    <div class="title-container">
-       <div class="title"><h1>Wise Realty Group, LLC</h1></div>
+       <div class="title"><h1>ABC
+            Realty Group, LLC</h1></div>
        <div class="subtitle"><h2><em>We support all of our clients to achieve good results... so let us work hard for you</em></h2></div>
    </div>
 </body>
