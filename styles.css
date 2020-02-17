@@ -33,6 +33,7 @@ nav {
     flex-basis:0%;
 }
 
+
 .hamburger button {
     border:none;
     width: 0rem;
@@ -129,7 +130,9 @@ nav {
     flex-basis: 30%;
 }
 
-
+.hamburger button:hover {
+    background-color: green;
+}
 .links {
     flex-direction: column;
     flex-basis:70%;
