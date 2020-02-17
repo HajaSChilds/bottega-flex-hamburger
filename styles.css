@@ -1,0 +1,141 @@
+
+html {
+    margin: 0px;
+    box-sizing: border-box;
+    color: slategrey;
+}
+
+/****************************** MENU ***********/
+
+nav {
+    display:flex;
+    box-shadow: 3px 10px 7px gray ;
+    background-color: lightgray;
+    margin: -10px;
+}
+
+.stationary-menu {
+    display:flex;
+    flex-basis: 10%;
+}
+
+
+.hamburger {
+    color:green;
+    background-color: white;
+    text-align: center;
+    border: none;
+    margin:0px;
+    flex-basis:0%;
+}
+
+.hamburger button {
+    border:none;
+    width: 0rem;
+    margin:0px;
+    visibility:hidden;
+}
+
+.logo {
+    color: rgb(8, 8, 138);
+    background-color: white;
+    padding:10px;
+    min-width: 200px;
+
+}
+
+.links {
+    display:flex;
+    flex-basis: 90%;
+    justify-content: space-between;
+}
+
+a {
+    color: rgb(8, 8, 138);
+    text-decoration: none;
+}
+
+.header-links {
+     display: flex;
+     flex-basis: 2fr;
+}
+
+.spacer-div {
+  flex-basis: auto;
+}
+
+.side-link {
+    flex-basis: 1fr;
+}
+ 
+
+.hlink, .logo {
+    border-right: 1px solid white;
+    padding:10px;
+}
+
+.side-link {
+    border-left: 1px solid white;
+    padding:10px;
+}
+
+.hlink:hover, .side-link:hover {
+     background-color: rgb(22, 88, 25);
+}
+
+/**********************  TITLE   ******/
+
+.title-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    color: rgb(8, 8, 138);
+    margin-top: 40px;
+}
+
+
+@media (max-width: 760px) {
+
+nav {
+    flex-direction: column;
+}
+
+stationary-menu {
+    display:flex;
+    flex-basis: 20%;
+}
+
+
+.links {
+    flex-direction: column;
+
+}
+
+.header-links {
+    flex-direction: column;
+}
+
+
+.hamburger {
+    color:green;
+    background-color: white;
+     
+    width: 100px;
+}
+
+.hamburger button {
+    border: 1px solid slategray;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    visibility:visible;
+    text-align: center;
+    justify-content:center;  
+}
+
+}
+
+
