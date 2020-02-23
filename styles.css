@@ -1,70 +1,64 @@
-
 html {
-    margin: 0px;
-    box-sizing: border-box;
-    color: slategrey;
-    
+  margin: 0px;
+  box-sizing: border-box;
+  color: slategray;
+  font-family: "Lora";
 }
 
 /****************************** MENU ***********/
-
 nav {
-    display:flex;
-    box-shadow: 5px 10px 10px gray ;
-    background-color: lightgray;
-    margin: -10px;
+  display: flex;
+  box-shadow: 5px 10px 10px slategray;
+  background-color: lightgray;
+  margin: -10px;
 }
 
 .stationary-menu {
-    display:flex;
-    flex-basis: 10%;
+  display: flex;
+  flex-basis: 15%;
 }
 
 #toggle {
-    display:flex;
+  display: flex;
 }
 
 .hamburger {
-    color:green;
-    background-color: white;
-    text-align: center;
-    border: none;
-    margin:0px;
-    flex-basis:0%;
+  background-color: white;
+  text-align: center;
+  border: none;
+  margin: 0px;
+  flex-basis: 0%;
 }
 
-
 .hamburger button {
-    border:none;
-    width: 0rem;
-    margin:0px;
-    visibility:hidden;
+  border: none;
+  width: 0rem;
+  margin: 0px;
+  visibility: hidden;
 }
 
 .logo {
-    color: rgb(8, 8, 138);
-    background-color: white;
-    padding:10px;
-    min-width: 200px;
-
+  color: #08088a;
+  background-color: white;
+  padding: 10px;
+  min-width: 200px;
+  flex-basis: 100%;
 }
-
 
 .links {
-    display:flex;
-    flex-basis: 90%;
-    justify-content: space-between;
+  display: flex;
+  flex-basis: 85%;
+  justify-content: space-between;
 }
 
-
 a {
-    color: rgb(8, 8, 138);
-    text-decoration: none;
+  color: #08088a;
+  text-decoration: none;
 }
 
 .header-links {
-     display: flex;
-     flex-basis: 2fr;
+  display: flex;
+  flex-basis: 2fr;
 }
 
 .spacer-div {
@@ -72,102 +66,105 @@ a {
 }
 
 .side-link {
-    flex-basis: 1fr;
+  flex-basis: 1fr;
 }
- 
-.side-link a{
-    color: green;
-      
+
+.side-link a {
+  color: green;
 }
- 
 
 .hlink, .logo {
-    border-right: 1px solid white;
-    padding:10px;
+  border-right: 1px solid white;
+  padding: 10px;
 }
 
 .side-link {
-    border-left: 1px solid white;
-    padding:10px;
+  border-left: 1px solid white;
+  padding: 10px;
 }
 
 .hlink:hover {
-     background-color: rgb(58, 155, 58);
-     border-radius: 6px;
+  background-color: rgba(58, 155, 58, 0.7);
+  border-radius: 6px;
 }
 
-  .side-link:hover {  
-      background-color: white;
-  }
-
+.side-link:hover {
+  background-color: white;
+}
 
 /**********************  TITLE   ******/
-
 .title-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title h1 {
-    color: rgb(8, 8, 138);
-    margin-top: 40px;
+  color: #08088a;
+  margin-top: 40px;
 }
 
 .subtitle {
-    text-align: center;
+  text-align: center;
 }
-
 
 @media (max-width: 780px) {
-
-nav {
+  nav {
     flex-direction: column;
-}
+  }
 
-.stationary-menu {
-    display:flex;
-    flex-basis: 30%;
-}
+  .stationary-menu {
+    display: flex;
+    flex-basis: 40%;
+  }
 
-.hamburger button:hover {
-    background-color: green;
-}
-.links {
-    flex-direction: column;
-    flex-basis:70%;
-}
+  .logo {
+    flex-basis: 40%;
+  }
 
-.header-links {
-    flex-direction: column;
-}
+  .hamburger {
+    border-right: 3px solid lightgray;
+    border-radius: 6px;
+    text-align: center;
+    background-color: white;
+    flex-basis: 10%;
+  }
 
-#toggle {
-    display: none;
-}
-
-.hamburger {
-    border: 3px solid lightgray;
-    background-color: white; 
-    width: 100px;
-}
-
-.hamburger button {
-
+  .hamburger button {
     width: 100%;
     height: 100%;
     outline: none;
     font-size: 30px;
     color: lightgray;
-    visibility:visible;
-    text-align: center;
-    justify-content:center;  
+    visibility: visible;
+  }
+
+  .hamburger button:hover {
+    background-color: rgba(58, 155, 58, 0.7);
+  }
+
+  .links {
+    flex-direction: column;
+    flex-basis: 60%;
+    border-bottom: 1px solid white;
+  }
+
+  .header-links {
+    flex-direction: column;
+    border-bottom: 1px solid white;
+  }
+
+  .hlink {
+    border-bottom: 1px solid white;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .hamburger button:active {
+    color: green;
+  }
 }
 
-.hamburger button:active {
-color:green;
-}
-
-}
-
-
+/*# sourceMappingURL=styles.css.map */
